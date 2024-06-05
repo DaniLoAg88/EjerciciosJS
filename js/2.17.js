@@ -9,7 +9,7 @@ do {
     horas = Number(prompt("Introduzca el número de horas"));
     minutos = Number(prompt("Introduzca el número de minutos"));
 
-    if (isNaN(dias) && isNaN(horas) && isNaN(segundos)) {
+    if (isNaN(dias) || isNaN(horas) || isNaN(segundos)) {
         alert("Error al introducir los datos");
         entradaCorrecta = false;
     } else {
